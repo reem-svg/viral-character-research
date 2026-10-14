@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="מחקר ממוקד על 22 יוצרים ודמויות רשת ויראליות, 10 מקרי-עומק, פסיכולוגיית הקשב, ו-10 קונספטים לדמות חדשה.">
+<meta property="og:title" content="אנטומיה של דמות ויראלית">
+<meta property="og:description" content="22 יוצרים, 10 מקרי-עומק, 17 סרטונים מתועדים, 10 מנגנוני-קשב ו-10 קונספטים לדמות חדשה.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%8A%3C/text%3E%3C/svg%3E">
+<style>
+  :root{color-scheme:light dark}
+  body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#faf9f7}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>אנטומיה של דמות ויראלית</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Suez+One&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+  :root{
+    --ground:#E9EAE4;
+    --surface:#FBFBF8;
+    --surface-2:#F2F3ED;
+    --ink:#17150F;
+    --ink-2:#5A564A;
+    --ink-3:#86826F;
+    --rule:#CFD0C7;
+    --rule-soft:#DEDFD7;
+    --accent:#A8761A;
+    --accent-ink:#6E4D0E;
+    --ok:#27624A;
+    --mid:#55667F;
+    --low:#A33D3D;
+    --shadow:0 1px 2px rgba(23,21,15,.06), 0 8px 24px -16px rgba(23,21,15,.22);
+
+    --f-display:"Suez One", Georgia, serif;
+    --f-body:"Assistant", "Segoe UI", system-ui, sans-serif;
+    --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+    --measure:70ch;
+    --pad:clamp(18px, 4vw, 48px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#141310;
+      --surface:#1D1B16;
+      --surface-2:#232019;
+      --ink:#EDEBE3;
+      --ink-2:#A39E90;
+      --ink-3:#7A7567;
+      --rule:#35322B;
+      --rule-soft:#2A2721;
+      --accent:#E0A93C;
+      --accent-ink:#F0C877;
+      --ok:#5FB088;
+      --mid:#8FA3C0;
+      --low:#D4756F;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#141310;
+    --surface:#1D1B16;
+    --surface-2:#232019;
+    --ink:#EDEBE3;
+    --ink-2:#A39E90;
+    --ink-3:#7A7567;
+    --rule:#35322B;
+    --rule-soft:#2A2721;
+    --accent:#E0A93C;
+    --accent-ink:#F0C877;
+    --ok:#5FB088;
+    --mid:#8FA3C0;
+    --low:#D4756F;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+
+  body{background:var(--ground);color:var(--ink);font-family:var(--f-body);}
+
+  .houndstooth{
+    height:9px;
+    background-color:var(--accent);
+    -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath d='M0 0h4v4H0z M4 4h4v4H4z M4 0l4 4V0z M0 4l4 4H0z' fill='%23000'/%3E%3C/svg%3E");
+    mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath d='M0 0h4v4H0z M4 4h4v4H4z M4 0l4 4V0z M0 4l4 4H0z' fill='%23000'/%3E%3C/svg%3E");
+    -webkit-mask-size:9px 9px;mask-size:9px 9px;
+    -webkit-mask-repeat:repeat;mask-repeat:repeat;
+  }
+  .houndstooth.soft{height:6px;background-color:var(--rule);opacity:.9;}
+
+  .page{
+    direction:rtl;
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 var(--pad) 96px;
+    font-size:17px;
+    line-height:1.72;
+    color:var(--ink);
+  }
+  .narrow{max-width:var(--measure);}
+
+  /* ---------- type ---------- */
+  h1,h2,h3,h4{font-family:var(--f-display);font-weight:400;text-wrap:balance;line-height:1.2;margin:0;}
+  h1{font-size:clamp(34px,6vw,60px);letter-spacing:-.01em;}
+  h2{font-size:clamp(25px,3.4vw,36px);}
+  h3{font-size:clamp(19px,2.2vw,23px);}
+  h4{font-family:var(--f-body);font-weight:800;font-size:17px;}
+  p{margin:0;}
+  a{color:var(--accent-ink);text-decoration-thickness:1px;text-underline-offset:2px;}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
+  strong{font-weight:700;}
+  code,.mono{font-family:var(--f-mono);font-size:.88em;}
+  .num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;}
+
+  .eyebrow{
+    font-family:var(--f-body);font-weight:800;font-size:12px;
+    letter-spacing:.14em;color:var(--accent-ink);
+    text-transform:none;
+  }
+  .lede{font-size:clamp(18px,2.1vw,21px);line-height:1.62;color:var(--ink-2);}
+  .small{font-size:14.5px;line-height:1.6;color:var(--ink-2);}
+  .tiny{font-size:13px;line-height:1.55;color:var(--ink-3);}
+
+  /* ---------- layout ---------- */
+  .stack{display:flex;flex-direction:column;}
+  .g8{gap:8px}.g12{gap:12px}.g16{gap:16px}.g24{gap:24px}.g32{gap:32px}.g48{gap:48px}
+
+  section{scroll-margin-top:20px;}
+  .sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:26px;}
+  .sec-head .num-tag{
+    font-family:var(--f-mono);font-size:12px;color:var(--ink-3);
+    letter-spacing:.08em;
+  }
+
+  header.masthead{padding:40px 0 0;}
+  .meta-row{
+    display:flex;flex-wrap:wrap;gap:8px 22px;align-items:baseline;
+    font-size:13.5px;color:var(--ink-3);font-family:var(--f-mono);
+  }
+
+  /* ---------- tables ---------- */
+  .tablewrap{
+    overflow-x:auto;
+    border:1px solid var(--rule);
+    background:var(--surface);
+    border-radius:3px;
+  }
+  table{border-collapse:collapse;width:100%;min-width:860px;font-size:14.5px;}
+  thead th{
+    position:sticky;top:0;
+    background:var(--surface-2);
+    text-align:right;font-weight:800;font-size:12.5px;
+    letter-spacing:.03em;color:var(--ink-2);
+    padding:11px 13px;border-bottom:1px solid var(--rule);
+    white-space:nowrap;z-index:1;
+  }
+  tbody td{padding:11px 13px;border-bottom:1px solid var(--rule-soft);vertical-align:top;line-height:1.5;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:color-mix(in srgb, var(--surface-2) 55%, transparent);}
+  td.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap;}
+  td.idx{font-family:var(--f-mono);color:var(--ink-3);width:1%;}
+  .t-name{font-weight:700;display:block;}
+  .t-sub{color:var(--ink-3);font-size:12.5px;}
+
+  /* ---------- confidence chips ---------- */
+  .chip{
+    display:inline-flex;align-items:center;gap:5px;
+    font-size:11.5px;font-weight:700;letter-spacing:.02em;
+    padding:2px 8px;border-radius:999px;white-space:nowrap;
+    border:1px solid currentColor;
+  }
+  .chip::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor;}
+  .c-hi{color:var(--ok);}
+  .c-mid{color:var(--mid);}
+  .c-lo{color:var(--low);}
+
+  /* ---------- boxes ---------- */
+  .note{
+    border-right:3px solid var(--accent);
+    background:var(--surface);
+    padding:16px 18px;border-radius:2px;
+    box-shadow:var(--shadow);
+  }
+  .warn{border-right-color:var(--low);}
+  .panel{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:3px;
+    padding:20px 22px;
+  }
+
+  .key{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+    gap:1px;background:var(--surface);border:1px solid var(--rule);border-radius:3px;overflow:hidden;
+  }
+  .key > div{background:var(--surface);padding:14px 16px;box-shadow:0 0 0 1px var(--rule);}
+
+  /* ---------- case cards ---------- */
+  .cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px;}
+  .case{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    display:flex;flex-direction:column;
+  }
+  .case > .case-top{
+    padding:16px 18px 14px;border-bottom:1px solid var(--rule-soft);
+    display:flex;flex-direction:column;gap:5px;
+  }
+  .case h3{font-size:20px;}
+  .case-body{padding:14px 18px 18px;display:flex;flex-direction:column;gap:11px;}
+  .qa{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:baseline;}
+  .qa dt{
+    font-family:var(--f-mono);font-size:11px;color:var(--accent-ink);
+    font-weight:600;padding-top:2px;white-space:nowrap;
+  }
+  .qa dd{margin:0;font-size:14.5px;line-height:1.55;}
+
+  /* ---------- mechanism list ---------- */
+  .mechs{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden;}
+  .mech{background:var(--surface);padding:18px 20px;display:grid;grid-template-columns:1fr;gap:10px;}
+  @media(min-width:760px){.mech{grid-template-columns:minmax(190px,1fr) 2.1fr;gap:10px 26px;}}
+  .mech-title{display:flex;flex-direction:column;gap:3px;}
+  .mech-title b{font-size:16.5px;}
+  .mech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px 22px;}
+  .mech-grid > div{display:flex;flex-direction:column;gap:2px;}
+  .mech-grid span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;color:var(--ink-3);}
+  .mech-grid p{font-size:14px;line-height:1.5;}
+
+  /* ---------- concepts ---------- */
+  .concepts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;}
+  .concept{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:18px 20px;display:flex;flex-direction:column;gap:10px;
+  }
+  .concept.pick{border-color:var(--accent);box-shadow:var(--shadow);}
+  .concept-head{display:flex;flex-direction:column;gap:3px;}
+  .engine{
+    align-self:flex-start;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.05em;
+    color:var(--accent-ink);border:1px solid currentColor;border-radius:2px;padding:2px 7px;
+  }
+  .concept dl{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;margin:0;font-size:14px;line-height:1.5;}
+  .concept dt{font-weight:700;color:var(--ink-2);white-space:nowrap;}
+  .concept dd{margin:0;}
+
+  ul.bullets{margin:0;padding-inline-start:1.15em;display:flex;flex-direction:column;gap:6px;}
+  ul.bullets li{padding-inline-start:2px;}
+  ol.steps{margin:0;padding-inline-start:1.3em;display:flex;flex-direction:column;gap:10px;}
+
+  .toc{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:1px;background:var(--surface);border:1px solid var(--rule);border-radius:3px;overflow:hidden;
+  }
+  .toc a{
+    background:var(--surface);padding:12px 15px;text-decoration:none;color:var(--ink);
+    display:flex;flex-direction:column;gap:2px;
+    box-shadow:0 0 0 1px var(--rule);
+  }
+  .toc a:hover{background:var(--surface-2);}
+  .toc a .mono{color:var(--ink-3);font-size:11px;}
+  .toc a b{font-size:14.5px;font-weight:700;}
+
+  .sources{columns:2 260px;column-gap:28px;font-size:13.5px;line-height:1.6;}
+  .sources li{break-inside:avoid;margin-bottom:7px;}
+
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;}}
+</style>
+</head>
+<body>
+
+
+<div class="houndstooth"></div>
+
+<main class="page stack g48">
+
+  <header class="masthead stack g24">
+    <div class="stack g12 narrow">
+      <p class="eyebrow">מחקר ממוקד · משפיענים ודמויות רשת · אוקטובר 2026</p>
+      <h1>אנטומיה של דמות ויראלית</h1>
+      <p class="lede">22 יוצרים ודמויות שנבדקו, 10 מקרי-עומק, 17 סרטונים מתועדים, 10 מנגנוני-קשב ו-10 קונספטים לדמות חדשה — עם תוכנית-ביצוע בהיגספילד והמחיר האמיתי שלה.</p>
+    </div>
+    <div class="meta-row">
+      <span>נערך 14.10.2026</span>
+      <span>מקורות: Wikipedia · KnowYourMeme · TIME · Forbes · Dexerto · Rolling Stone · Higgsfield</span>
+      <span>הוכן עבור ראם עוז</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="ניווט">
+    <a href="#stage1"><span class="mono">שלב 1</span><b>מצאי היוצרים</b></a>
+    <a href="#stage2"><span class="mono">שלב 2</span><b>10 מקרי-עומק</b></a>
+    <a href="#stage3"><span class="mono">שלב 3</span><b>אנטומיית הסרטון</b></a>
+    <a href="#stage4"><span class="mono">שלב 4</span><b>מה באמת משותף</b></a>
+    <a href="#stage5"><span class="mono">שלב 5</span><b>פסיכולוגיית הקשב</b></a>
+    <a href="#stage6"><span class="mono">שלב 6</span><b>10 קונספטים</b></a>
+    <a href="#build"><span class="mono">ביצוע</span><b>היגספילד ומחירים</b></a>
+    <a href="#limits"><span class="mono">גילוי נאות</span><b>מה לא נבדק</b></a>
+  </nav>
+
+  <!-- ============ CONFIDENCE KEY ============ -->
+  <section class="stack g16">
+    <div class="note warn stack g8">
+      <h4>קודם כול — איך לקרוא את המספרים כאן</h4>
+      <p class="small">מספרי עוקבים וצפיות ברשתות משתנים כל יום, וטיקטוק ואינסטגרם לא מאפשרים אימות חיצוני מסודר. לכן כל נתון בדף הזה נושא תווית-ודאות, ו<strong>שום מספר לא הומצא</strong>. איפה שלא מצאתי מקור — כתוב "לא אומת", ולא נוקב מספר.</p>
+      <p class="small"><strong>הפרדה חשובה שהדף שומר עליה לכל אורכו:</strong> מספר עוקבים ≠ הצלחת סרטון בודד. Jimothy הדביבון עשה 10 מיליון צפיות בלי חשבון בכלל. ל-Derek Mercer יש בדיוק אותו פורמט כמו ל-Jean Phil — ו-1,200 עוקבים.</p>
+    </div>
+    <div class="key">
+      <div class="stack g8">
+        <span class="chip c-hi">ודאות גבוהה</span>
+        <p class="tiny">מקור מתועד (ויקיפדיה, כלי-תקשורת מוכר, KnowYourMeme) עם מספר ותאריך מפורשים.</p>
+      </div>
+      <div class="stack g8">
+        <span class="chip c-mid">ודאות בינונית</span>
+        <p class="tiny">מקור משני, נתון שדווח ע"י היוצר/הסוכנות עצמם, או מספר ללא תאריך-בדיקה ברור.</p>
+      </div>
+      <div class="stack g8">
+        <span class="chip c-lo">לא אומת</span>
+        <p class="tiny">הדמות קיימת ורלוונטית, אבל לא מצאתי מספר אמין. מוצגת לצורך מיפוי בלבד.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ STAGE 1 ============ -->
+  <section id="stage1" class="stack g24">
+    <div class="sec-head">
+      <span class="num-tag">שלב 1</span>
+      <h2>מצאי היוצרים — 22 דמויות, שמונה מנגנונים שונים</h2>
+      <p class="lede narrow">הרשימה לא מדורגת לפי גודל. היא מדורגת לפי <em>מה אפשר ללמוד ממנה</em>. יש כאן חשבונות של 163 מיליון עוקבים ויש כאן דביבון שאין לו חשבון — ושניהם מלמדים משהו.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>היוצר / הדמות</th><th>מדינה · שפה</th><th>מנגנון</th><th>היקף קהל</th><th>מתי פרץ</th><th>הרגע שעשה את זה</th><th>המבדל בשנייה הראשונה</th><th>ודאות</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="idx">01</td>
+            <td><span class="t-name"><bdi>Jean Philanthrope</bdi> ("Jean Phil")</span><span class="t-sub"><bdi><a href="https://www.tiktok.com/@jean_philanthrope">tiktok.com/@jean_philanthrope</a></bdi></span></td>
+            <td>צרפת · ללא דיבור</td><td>דמות AI</td>
+            <td class="n">TikTok ~228K<br>IG ~235K</td>
+            <td class="n">17–25.9.2026</td>
+            <td>צל-אגרוף ברחוב בפריז, 19.9, לפסקול <bdi>"FINIS-LES" / La Fève</bdi> — <strong>5.6M צפיות ו-561K לייקים ב-3 ימים</strong>. 8 סרטונים סה"כ → 33M+ צפיות</td>
+            <td>בוב בלונדיני תפוח + שפם מסולסל + חליפת houndstooth חומה. דֶדפן מוחלט</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">02</td>
+            <td><span class="t-name"><bdi>Archibald Brown</bdi></span><span class="t-sub">מחקה ישיר של Jean Phil</span></td>
+            <td>"אנגליה" · ללא דיבור</td><td>דמות AI</td>
+            <td class="n">~110K</td>
+            <td class="n">סוף 9/2026</td>
+            <td>מיצב את עצמו כ"יריב האנגלי" של Jean Phil — יריבות בדויה כמנוע-צמיחה</td>
+            <td>אותו פורמט, פרסונה הפוכה</td>
+            <td><span class="chip c-mid">בינונית</span></td>
+          </tr>
+          <tr>
+            <td class="idx">03</td>
+            <td><span class="t-name"><bdi>Derek Mercer</bdi></span><span class="t-sub">מחקה שנכשל — שיעור חשוב</span></td>
+            <td>— · ללא דיבור</td><td>דמות AI</td>
+            <td class="n">~1,200</td>
+            <td class="n">סוף 9/2026</td>
+            <td>אותה נוסחה בדיוק. כמעט אפס תוצאות</td>
+            <td>"גבר שרירי עם שיער ארוך" — תיאור שמתאים לאלפי דמויות</td>
+            <td><span class="chip c-mid">בינונית</span></td>
+          </tr>
+          <tr>
+            <td class="idx">04</td>
+            <td><span class="t-name"><bdi>Granny Spills</bdi></span><span class="t-sub">מבית <bdi>Blur Studios</bdi></span></td>
+            <td>ארה"ב · אנגלית</td><td>דמות AI</td>
+            <td class="n">2.5M<br><span class="t-sub">בתוך חודש</span></td>
+            <td class="n">2026</td>
+            <td>400K בטיקטוק ו-1M באינסטגרם בשבועות הראשונים. סרטון <bdi>"Flowers die, honey. My Chanel bags are forever"</bdi> — כמעט מיליון לייקים</td>
+            <td>סבתא בחליפת דיזיינר ורודה שיורה עקיצות רצחניות</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">05</td>
+            <td><span class="t-name"><bdi>Glorb</bdi></span><span class="t-sub">יוצר אנונימי</span></td>
+            <td>ארה"ב · אנגלית</td><td>קול AI</td>
+            <td class="n">YouTube 1.17M<br>381.3M צפיות</td>
+            <td class="n">6/2023</td>
+            <td><bdi>"The Bottom"</bdi> — 1.5M צפיות בחודש. <bdi>"FUN"</bdi> — מיליון+ בחודש</td>
+            <td>דמויות בובספוג מראפרות ראפ קשוח בקולות AI. אין פנים בכלל</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">06</td>
+            <td><span class="t-name"><bdi>Khaby Lame</bdi></span><span class="t-sub"><bdi>@khaby.lame</bdi></span></td>
+            <td>איטליה/סנגל · ללא דיבור</td><td>אדם אמיתי</td>
+            <td class="n">TikTok 162,977,070<br>סה"כ ~258.4M</td>
+            <td class="n">2020</td>
+            <td>סדרת לעג ל"לייף-האקים" מסובכים. היוצר הכי נעקב בעולם בטיקטוק</td>
+            <td>כפות ידיים פתוחות + מבט מזלזל. אפס מילים, אפס תרגום</td>
+            <td><span class="chip c-hi">גבוהה</span><span class="t-sub">נבדק 10/2026</span></td>
+          </tr>
+          <tr>
+            <td class="idx">07</td>
+            <td><span class="t-name"><bdi>Nobody Sausage</bdi></span><span class="t-sub">מאת <bdi>Kael Cabral</bdi></span></td>
+            <td>פורטוגל · ללא דיבור</td><td>אנימציה</td>
+            <td class="n">~33–35M<br><span class="t-sub">בכל הפלטפורמות</span></td>
+            <td class="n">4/2020</td>
+            <td>נקניקייה רוקדת. מאז: Netflix, Adidas, Louboutin, Hugo Boss, מיצבים בקוריאה ובסין</td>
+            <td>חמישה צינורות — גוף, שתי ידיים, שתי רגליים. סילואט שאי-אפשר לבלבל</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">08</td>
+            <td><span class="t-name"><bdi>Bayashi</bdi> (<bdi>Hiroaki Nakabayashi</bdi>)</span></td>
+            <td>יפן · כמעט ללא דיבור</td><td>פורמט</td>
+            <td class="n">TikTok 54.6M<br>YouTube 36.6M<br>IG 5.9M</td>
+            <td class="n">~2020</td>
+            <td>בישול/מוקבאנג קצר. אחד מחשבונות הטיקטוק הגדולים בעולם</td>
+            <td>ידיים, אוכל, סאונד. הפנים כמעט לא רלוונטיות</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">09</td>
+            <td><span class="t-name"><bdi>Pinkydoll</bdi> (<bdi>Fedha Sinon</bdi>)</span></td>
+            <td>קנדה · אנגלית (3 מילים)</td><td>פורמט חי</td>
+            <td class="n">TikTok ~1.1M</td>
+            <td class="n">7/2023</td>
+            <td>שידורי NPC חיים. <bdi>"ice cream so good"</bdi> ו-<bdi>"gang gang"</bdi> הפכו לממים. עד $7,000 ביום</td>
+            <td>בן-אדם שמתנהג כדמות-משחק מתוכנתת. תגובה קבועה לכל מתנה</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">10</td>
+            <td><span class="t-name">Costco Guys — <bdi>A.J. & Big Justice Befumo</bdi></span><span class="t-sub"><bdi>@a.j.befumo</bdi></span></td>
+            <td>ארה"ב · אנגלית</td><td>אב ובן</td>
+            <td class="n">1.2M → 1.5M</td>
+            <td class="n">1.3.2024</td>
+            <td>הסרטון הראשון: <strong>~20.3M צפיות ו-2.1M לייקים בכשבועיים</strong>. מאז: SNL, Tonight Show, חוזה היאבקות ב-AEW</td>
+            <td>"BOOM!" + סולם-דירוג קבוע למוצרים. אנרגיה של אליפות עולם בסופרמרקט</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">11</td>
+            <td><span class="t-name"><bdi>Jimothy</bdi> הדביבון</span><span class="t-sub">צולם ע"י <bdi>Kiana Hall</bdi>, סיאטל</span></td>
+            <td>ארה"ב · ללא שפה</td><td>חיה אמיתית</td>
+            <td class="n">אין חשבון</td>
+            <td class="n">7/2026</td>
+            <td>סרטון אחד באינסטגרם — <strong>10M+ צפיות בשבוע</strong>. מרצ'נדייז, Google ו-Goodyear, ותואר-כבוד "ד"ר ג'ימות'י" מאוניברסיטת וושינגטון</td>
+            <td>גוף עגול וקצר (מום בעמוד השדרה) + הליכה רגועה לגמרי</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">12</td>
+            <td><span class="t-name"><bdi>Jools Lebron</bdi></span></td>
+            <td>ארה"ב · אנגלית</td><td>משפט קבוע</td>
+            <td class="n">TikTok 2.3M</td>
+            <td class="n">8/2024</td>
+            <td><bdi>"very demure, very mindful"</bdi> — <strong>58M צפיות</strong>. מותגים וחברות אימצו את המשפט</td>
+            <td>טון רך + משפט אחד חוזר. לא תחפושת — אינטונציה</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">13</td>
+            <td><span class="t-name"><bdi>Megan Boni</bdi></span><span class="t-sub"><bdi>@girl_on_couch</bdi></span></td>
+            <td>ארה"ב · אנגלית</td><td>סרטון בודד</td>
+            <td class="n">לא אומת</td>
+            <td class="n">5/2024</td>
+            <td><bdi>"Looking for a Man in Finance"</bdi> — <strong>22M+ צפיות</strong>, הפך לשיר אמיתי בצ'ארטים</td>
+            <td>שירה אקפלה 19 שניות על הספה. אפס הפקה</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">14</td>
+            <td><span class="t-name"><bdi>Fonz</bdi> (<bdi>Aldrich Nartia</bdi>)</span></td>
+            <td>פיליפינים · טאגלוג</td><td>אביזר קבוע</td>
+            <td class="n">TikTok 1.5M+</td>
+            <td class="n">~2022–2026</td>
+            <td>סקיצים עם תפנית. עכשיו משחק בסדרה של GMA בתפקיד שמבוסס עליו</td>
+            <td>מיקרופון-יד שמופיע <em>בכל</em> סרטון. חתימה חזותית בעלות אפס</td>
+            <td><span class="chip c-hi">גבוהה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">15</td>
+            <td><span class="t-name"><bdi>Hasbulla Magomedov</bdi></span><span class="t-sub"><bdi>@hasbulla.hushetskiy</bdi></span></td>
+            <td>דאגסטן/רוסיה · רוסית</td><td>מראה חריג</td>
+            <td class="n">IG ~8M</td>
+            <td class="n">2020–2021</td>
+            <td>סרטוני "קרבות" מול לוחמי MMA בגודל כפול ממנו</td>
+            <td>גובה 99 ס"מ (חוסר בהורמון גדילה), קול גבוה, ביטחון עצמי של אלוף עולם</td>
+            <td><span class="chip c-mid">בינונית</span></td>
+          </tr>
+          <tr>
+            <td class="idx">16</td>
+            <td><span class="t-name"><bdi>Vexbolts</bdi></span></td>
+            <td>ארה"ב · אנגלית</td><td>משפט קבוע</td>
+            <td class="n">4.8M<br><span class="t-sub">נכון ל-2024</span></td>
+            <td class="n">2023</td>
+            <td>קליפ פורטנייט שבו הוא צועק <bdi>"let him cook"</bdi>. בהמשך: קמפיין "ביטול-עוקב המוני" ב-31.12.2024</td>
+            <td>הקול והצעקה — לא המראה</td>
+            <td><span class="chip c-mid">בינונית</span></td>
+          </tr>
+          <tr>
+            <td class="idx">17</td>
+            <td><span class="t-name"><bdi>Lil Miquela</bdi></span><span class="t-sub">נוצרה ע"י <bdi>Brud</bdi></span></td>
+            <td>ארה"ב · אנגלית</td><td>דמות AI</td>
+            <td class="n">6.7M+<br><span class="t-sub">בכל הפלטפורמות</span></td>
+            <td class="n">2016</td>
+            <td>הוותיקה בתחום. שיתופי פעולה עם Prada, Calvin Klein, Samsung</td>
+            <td>נערה וירטואלית מושלמת עם פאות ילדותיות</td>
+            <td><span class="chip c-mid">בינונית</span></td>
+          </tr>
+          <tr>
+            <td class="idx">18</td>
+            <td><span class="t-name"><bdi>Aitana López</bdi></span><span class="t-sub">מאת <bdi>The Clueless</bdi>, ברצלונה</span></td>
+            <td>ספרד · ספרדית</td><td>דמות AI</td>
+            <td class="n">IG ~390K</td>
+            <td class="n">אמצע 2023</td>
+            <td>לא "סרטון שפרץ" — מודל עסקי. מעל €1,000 לפוסט ממומן, עד €10,000 בחודש חזק</td>
+            <td>שיער ורוד, קעקועים, נישת כושר+גיימינג</td>
+            <td><span class="chip c-mid">בינונית</span><span class="t-sub">נתוני הסוכנות עצמה</span></td>
+          </tr>
+          <tr>
+            <td class="idx">19</td>
+            <td><span class="t-name"><bdi>AiraBlack</bdi></span></td>
+            <td>— · ללא דיבור</td><td>דמות AI</td>
+            <td class="n">~1.4M<br>13M לייקים</td>
+            <td class="n">לא אומת</td>
+            <td>סרטוני ריקוד ומופעים מיוצרי-AI</td>
+            <td>"מלכת השחור" — פלטת צבעים אחידה בכל סרטון</td>
+            <td><span class="chip c-lo">לא אומת</span></td>
+          </tr>
+          <tr>
+            <td class="idx">20</td>
+            <td><span class="t-name"><bdi>Mia Zelu</bdi></span></td>
+            <td>— · אנגלית</td><td>דמות AI</td>
+            <td class="n">לא אומת</td>
+            <td class="n">2025–2026</td>
+            <td>תמונות "מווימבלדון" שנראו אמיתיות לחלוטין</td>
+            <td>ריאליזם — דווקא לא קריקטורה</td>
+            <td><span class="chip c-lo">לא אומת</span></td>
+          </tr>
+          <tr>
+            <td class="idx">21</td>
+            <td><span class="t-name"><bdi>Dan Hentschel</bdi></span></td>
+            <td>ארה"ב · אנגלית</td><td>הומור אבסורדי</td>
+            <td class="n">לא אומת</td>
+            <td class="n">2021</td>
+            <td>"עצות זוגיות" סאטיריות; מאז סרטונים ארוכים עם הנחות-יסוד אבסורדיות</td>
+            <td>הגשה רצינית לחלוטין של תוכן מופרך</td>
+            <td><span class="chip c-lo">לא אומת</span></td>
+          </tr>
+          <tr>
+            <td class="idx">22</td>
+            <td><span class="t-name"><bdi>Kris Collins</bdi> (<bdi>kallmekris</bdi>)</span></td>
+            <td>קנדה · אנגלית</td><td>ריבוי דמויות</td>
+            <td class="n">לא אומת</td>
+            <td class="n">2020</td>
+            <td>גלריית דמויות קבועות בהומור יבש</td>
+            <td>אותה שחקנית, דמויות מתחלפות — ההפך המדויק מ-Jean Phil</td>
+            <td><span class="chip c-lo">לא אומת</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note stack g8 narrow">
+      <h4>שלוש תצפיות שעולות מהטבלה עצמה</h4>
+      <ul class="bullets small">
+        <li><strong>הפורמט לבדו שווה כלום.</strong> Jean Phil, Archibald Brown ו-Derek Mercer הריצו את אותה נוסחה בדיוק באותו חודש. התוצאות: 228K, 110K, 1,200. ההבדל הוא <em>חדות הדמות</em>, לא המתכון.</li>
+        <li><strong>היעדר שפה הוא יתרון — לא תנאי.</strong> ארבעה מהגדולים ברשימה שותקים לגמרי (Khaby, Jean Phil, Sausage, Jimothy). אבל Granny Spills, Costco Guys ו-Jools Lebron בנויים כולם על מילים באנגלית. השתיקה פותחת שווקים; היא לא מייצרת ויראליות.</li>
+        <li><strong>העלייה הכי מהירה ברשימה שייכת ל-AI.</strong> Granny Spills עשתה 2.5 מיליון עוקבים בחודש; Jean Phil עשה 33 מיליון צפיות בשמונה סרטונים. אף אדם אמיתי ברשימה לא התקרב לקצב הזה.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ STAGE 2 ============ -->
+  <section id="stage2" class="stack g24">
+    <div class="sec-head">
+      <span class="num-tag">שלב 2</span>
+      <h2>עשרה מקרי-עומק</h2>
+      <p class="lede narrow">נבחרו לפי שילוב של מהירות-צמיחה, יחס צפיות-לגודל-חשבון, ייחוד הדמות, יכולת-שכפול וכוח-מם — לא לפי גודל. לכן Jimothy הדביבון נכנס ו-Lil Miquela, עם 6.7 מיליון עוקבים, לא.</p>
+    </div>
+
+    <div class="cases">
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 01 · דמות AI</span>
+          <h3>Jean Philanthrope</h3>
+          <p class="tiny">33M+ צפיות מ-8 סרטונים · 19–25.9.2026 · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>צרפתי אלגנטי בחליפת houndstooth שעושה צל-אגרוף. זה הכול. אין בדיחה, אין פאנץ', אין טקסט.</dd>
+            <dt>ב · זיהוי</dt><dd>שלושה אלמנטים נעולים יחד: בוב בלונדיני, שפם מסולסל, חליפה חומה. הכינוי שהרשת נתנה לו — "איש הפודל".</dd>
+            <dt>ג · הדבר הראשון</dt><dd>השיער. הוא לא דומה לשיער של אף אחד בפיד.</dd>
+            <dt>ד · הרגש</dt><dd>בלבול מהנה. לא צחוק — <em>"רגע, מה אני רואה?"</em></dd>
+            <dt>ה · החריגות</dt><dd>רצינות גמורה בפעולה חסרת-תכלית. הוא אף פעם לא קורץ לצופה.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>הוויכוח "האם זה AI?" — אנשים צפו שוב כדי לחפש ארטיפקטים.</dd>
+            <dt>ז · שיתוף</dt><dd>אי-אפשר להסביר את זה במילים. חייבים לשלוח את הסרטון.</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> פנים, תסרוקת, חליפה, צל-אגרוף, מצלמה סטטית. <strong>משתנה:</strong> המיקום והמוזיקה בלבד — רחוב בפריז, פארק, מוזיאון, בית-קפה, מסעדת צדפות.</dd>
+            <dt>ט · הפקה</dt><dd>יחס קיצוני: אפס צוות, אפס שחקן, אפס לוקיישן. 33 מיליון צפיות.</dd>
+            <dt>י · מה זה</dt><dd>AI מלא. דמות-על-תמונת-מאסטר אחת + העברת-תנועה מסרטון-ייחוס.</dd>
+            <dt>יא · שחזור</dt><dd><strong>לא.</strong> הפעילות המתועדת נעצרת ב-25.9.2026, פחות מעשרה ימים אחרי הפריצה.</dd>
+            <dt>יב · הלקח</dt><dd>דמות אחת + פעולה אחת + רקע מתחלף = מפעל-סרטונים. אבל <em>היציאה</em> היתה מטבע-מם ($JEANPHIL, שווי שוק ~$8.8M) — לא מותג. זה בדיוק מה שהרג את אורך-החיים.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 02 · דמות AI</span>
+          <h3>Granny Spills</h3>
+          <p class="tiny">2.5M עוקבים בחודש · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>סבתא עשירה בחליפות דיזיינר ורודות שמחלקת עצות-חיים אכזריות.</dd>
+            <dt>ב · זיהוי</dt><dd>ורוד מונוכרומטי מלא. הצבע הוא הלוגו.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>הפער בין הפנים הזקנות לחליפה היקרה.</dd>
+            <dt>ד · הרגש</dt><dd>הנאה מהחוצפה. <bdi>"Flowers die, honey. My Chanel bags are forever"</bdi> — כמעט מיליון לייקים.</dd>
+            <dt>ה · החריגות</dt><dd>סבתות ברשת אמורות להיות מתוקות. זאת לא.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>משפטים קצרים שאפשר לצטט — אנשים חזרו בשביל השורה.</dd>
+            <dt>ז · שיתוף</dt><dd>כל סרטון הוא כרטיס-ברכה עקיצתי שאפשר לשלוח למישהו ספציפי.</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> הפנים, הוורוד, מבנה העקיצה. <strong>משתנה:</strong> הנושא.</dd>
+            <dt>ט · הפקה</dt><dd>עשרות סרטונים בחודש. <strong>הצוות אימן את Claude על הסרטונים הקודמים שלהם כדי לייצר קונספטים ותסריטים חדשים.</strong></dd>
+            <dt>י · מה זה</dt><dd>AI מלא, מבית Blur Studios — <bdi>Eric Suerez</bdi> ו-<bdi>Adam Vaserstein</bdi>. להם יש כבר סדרת דמויות.</dd>
+            <dt>יא · שחזור</dt><dd><strong>כן</strong> — וזה ההבדל מ-Jean Phil. הם בנו קו-ייצור, לא סרטון.</dd>
+            <dt>יב · הלקח</dt><dd>המודל העסקי האמיתי הוא <em>סטודיו-דמויות</em>, לא דמות. ואזהרה: דווח שהיא מתקשה להמיר מכירות למותגים — קהל-צפייה ≠ קהל-קונה.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 03 · אדם אמיתי</span>
+          <h3>Khaby Lame</h3>
+          <p class="tiny">163M עוקבים · עסקה של ~$975M · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>אדם מראה בשקט שהדרך הפשוטה עובדת, אחרי שמישהו הראה דרך מסובכת.</dd>
+            <dt>ב · זיהוי</dt><dd>תנועת הידיים. שתי כפות פתוחות כלפי מעלה.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>בחלק ניכר מהסרטונים — ה<em>סרטון של מישהו אחר</em> בחצי המסך. הוא מרוויח את תשומת-הלב על גב תוכן קיים.</dd>
+            <dt>ד · הרגש</dt><dd>סיפוק. הצופה כבר חושב "זה מטומטם" — והוא אומר את זה בשבילו.</dd>
+            <dt>ה · החריגות</dt><dd>שתיקה מוחלטת בפלטפורמה שכולה רעש.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>אורך של 10–20 שניות עם פאנץ' בסוף = לופ טבעי.</dd>
+            <dt>ז · שיתוף</dt><dd>אפס מחסום שפה. סנגל, איטליה, ברזיל, אינדונזיה — אותה בדיחה.</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> המבט, התנועה, השתיקה. <strong>משתנה:</strong> החומר שהוא מגיב אליו — אספקה אינסופית, חינם.</dd>
+            <dt>ט · הפקה</dt><dd>טלפון. חדר. בלי תאורה. הפקה אפסית מול 258 מיליון עוקבים.</dd>
+            <dt>י · מה זה</dt><dd>אדם אמיתי, אפס עריכה כמעט.</dd>
+            <dt>יא · שחזור</dt><dd>חמש שנים רצופות. ב-1/2026 חתם עסקה בשווי ~975 מיליון דולר.</dd>
+            <dt>יב · הלקח</dt><dd><strong>תגובה היא מנוע-תוכן אינסופי.</strong> דמות שמגיבה לעולם לא נגמר לה החומר. דמות שמייצרת מאפס — כן.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 04 · אנימציה</span>
+          <h3>Nobody Sausage</h3>
+          <p class="tiny">~35M עוקבים · מאז 4/2020 · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>נקניקייה מצוירת שרוקדת. חמישה צינורות: גוף, שתי זרועות, שתי רגליים.</dd>
+            <dt>ב · זיהוי</dt><dd>סילואט שאין לו מתחרה. אפשר לזהות אותו בצללית בלבד.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>תנועה חלקה ומוזרה — הגוף מתנהג כמו גומי.</dd>
+            <dt>ד · הרגש</dt><dd>חיבה. זה פשוט נעים לראות.</dd>
+            <dt>ה · החריגות</dt><dd>דמות בלי פנים, בלי סיפור ובלי דיאלוג — שמצליחה להרגיש כמו אישיות.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>לופ מושלם. הסרטונים נבנו כדי לרוץ שוב בלי תפר.</dd>
+            <dt>ז · שיתוף</dt><dd>נייטרלי לחלוטין. אין בו שום דבר שיכול להעליב אף אחד.</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> הדמות. <strong>משתנה:</strong> הריקוד, התחפושת, הסצנה.</dd>
+            <dt>ט · הפקה</dt><dd>התחיל כתרגיל-אימון באנימציית-תנועה של אמן אחד, <bdi>Kael Cabral</bdi>.</dd>
+            <dt>י · מה זה</dt><dd>אנימציה תלת-ממדית טהורה.</dd>
+            <dt>יא · שחזור</dt><dd>שש שנים. Netflix, Adidas, Louboutin, Hugo Boss, מיצבי-אמנות בקוריאה ובסין.</dd>
+            <dt>יב · הלקח</dt><dd><strong>זה הנתיב המסחרי הכי בריא ברשימה.</strong> דמות ללא פנים אנושיות = בלי שערוריות, בלי שכר-שחקן, בלי הזדקנות. מותגים אוהבים את זה.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 05 · פורמט חי</span>
+          <h3>Pinkydoll</h3>
+          <p class="tiny">~1.1M · עד $7,000 ליום · 7/2023 · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>בת-אדם שמשחקת דמות-משחק מתוכנתת. כל מתנה של צופה מפעילה תגובה קבועה.</dd>
+            <dt>ב · זיהוי</dt><dd><bdi>"ice cream so good"</bdi>. שלוש מילים, אותו טון, אלפי פעמים.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>התחושה שמשהו לא בסדר — אדם שמתנהג כמו תוכנה.</dd>
+            <dt>ד · הרגש</dt><dd>אי-נוחות מהופנטת. משהו בין סקרנות למבוכה.</dd>
+            <dt>ה · החריגות</dt><dd>היא הפכה את עצמה לממשק. הצופה לוחץ — והיא מגיבה.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>אנשים שילמו כסף רק כדי לראות אם זה באמת יעבוד.</dd>
+            <dt>ז · שיתוף</dt><dd>צילומי-מסך מהלייבים הפכו למם — התוכן הוויראלי היה <em>הקלטה של מישהו אחר</em>.</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> כל מילה וכל תנועה. <strong>משתנה:</strong> מי שולח ומתי.</dd>
+            <dt>ט · הפקה</dt><dd>טלפון, רקע ורוד, אפס עריכה. מודל הכנסה ישיר בלי מפרסמים.</dd>
+            <dt>י · מה זה</dt><dd>אדם אמיתי שמשחק אלגוריתם.</dd>
+            <dt>יא · שחזור</dt><dd>כן כמודל-הכנסה. הפסגה התרבותית היתה חודש אחד.</dd>
+            <dt>יב · הלקח</dt><dd><strong>אינטראקטיביות משלמת מיידית.</strong> דמות שהקהל יכול "להפעיל" מרוויחה ישירות מהצופה, בלי מותג באמצע.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 06 · אב ובן</span>
+          <h3>Costco Guys</h3>
+          <p class="tiny">20.3M צפיות בסרטון הראשון · 1.3.2024 · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>אב ובן מדרגים מוצרים מקוסטקו באנרגיה של פרשני ספורט.</dd>
+            <dt>ב · זיהוי</dt><dd>"BOOM!" + סולם-דירוג קבוע + שני הגופים יחד.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>הילד. ילד שמדבר בביטחון של מבוגר עוצר גלילה.</dd>
+            <dt>ד · הרגש</dt><dd>שמחה. זה פשוט כיף, בלי ציניות.</dd>
+            <dt>ה · החריגות</dt><dd>התלהבות בקנה-מידה של אליפות עולם — על עוגייה.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>הפורמט הוא טקס. אנשים חוזרים בשביל הטקס, לא בשביל המידע.</dd>
+            <dt>ז · שיתוף</dt><dd>יחסי אב-בן. אנשים שלחו את זה להורים ולילדים שלהם.</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> הסולם, הקריאה, החנות. <strong>משתנה:</strong> המוצר.</dd>
+            <dt>ט · הפקה</dt><dd>טלפון בתוך סופרמרקט. ~20.3 מיליון צפיות ו-2.1 מיליון לייקים בכשבועיים.</dd>
+            <dt>י · מה זה</dt><dd>אנשים אמיתיים, אפס עריכה.</dd>
+            <dt>יא · שחזור</dt><dd>כן — עשרות סרטונים, 1.2→1.5 מיליון עוקבים, SNL, Tonight Show, חוזה AEW, שירים.</dd>
+            <dt>יב · הלקח</dt><dd><strong>סולם-דירוג הוא תבנית-זהב.</strong> הוא מייצר ציפייה, ויכוח בתגובות, וסיבה לחזור. וקטין בקדמת הדמות = חשיפה לביקורת ציבורית ורגולציה.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 07 · קול AI</span>
+          <h3>Glorb</h3>
+          <p class="tiny">1.17M מנויים · 381.3M צפיות · 6/2023 · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>דמויות בובספוג מראפרות ראפ אפל וקשוח, בקולות AI.</dd>
+            <dt>ב · זיהוי</dt><dd>הקול. לא צריך לראות כלום.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>שנייה אחת של קול מוכר מהילדות שאומר משהו שהוא לא אמור לומר.</dd>
+            <dt>ד · הרגש</dt><dd>הלם משועשע.</dd>
+            <dt>ה · החריגות</dt><dd>המרחק המקסימלי בין המקור (סדרת ילדים) לתוכן.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>אלה שירים אמיתיים. אנשים חוזרים אליהם כמוזיקה, לא כבדיחה.</dd>
+            <dt>ז · שיתוף</dt><dd>שורות שאפשר לצטט. מועדון של "מי ששמע".</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> היקום ואיכות הכתיבה. <strong>משתנה:</strong> הדמות שמראפרת.</dd>
+            <dt>ט · הפקה</dt><dd>הערכה רווחת: אדם אמיתי מראפר, ואז המרת-קול ב-AI. הכתיבה — אנושית לגמרי.</dd>
+            <dt>י · מה זה</dt><dd>שילוב: כישרון אנושי + AI ככלי-הסוואה.</dd>
+            <dt>יא · שחזור</dt><dd>שלוש שנים, עשרות טראקים: <bdi>"The Bottom"</bdi> 1.5M בחודש, <bdi>"FUN"</bdi> מיליון+, <bdi>"KYS"</bdi> 768K.</dd>
+            <dt>יב · הלקח</dt><dd><strong>AI לא מחליף את הכישרון — הוא מסווה אותו.</strong> גם: אנונימיות מוחלטת יכולה להיות נכס. ואזהרה: הבסיס הוא קניין רוחני של אחרים.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 08 · חיה אמיתית</span>
+          <h3>Jimothy הדביבון</h3>
+          <p class="tiny">10M+ צפיות בשבוע · 7/2026 · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>אין רעיון. דביבון בר בסיאטל עם מום בעמוד השדרה שנותן לו גוף עגול וקצר.</dd>
+            <dt>ב · זיהוי</dt><dd>הפרופורציות. פריים אחד מספיק.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>תחושת "זה לא נראה נכון" — לפני שהמוח מבין למה.</dd>
+            <dt>ד · הרגש</dt><dd>רוך. הוא לא מודע לכלום וממשיך בשלו.</dd>
+            <dt>ה · החריגות</dt><dd>פרופורציות גוף חריגות עוקפות כל פילטר-תוכן במוח.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>אנשים חזרו כדי לראות את ההליכה.</dd>
+            <dt>ז · שיתוף</dt><dd>הוא הפך למצב-רוח. "אני ג'ימות'י היום."</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> הוא. <strong>משתנה:</strong> מי צילם אותו הפעם.</dd>
+            <dt>ט · הפקה</dt><dd>שכנה שצילמה מהמטבח בזמן שטיפת כלים. אפס.</dd>
+            <dt>י · מה זה</dt><dd>מציאות נטו.</dd>
+            <dt>יא · שחזור</dt><dd>המקרה היחיד ברשימה שבו <em>הדמות לא שולטת בכלום</em>. Google ו-Goodyear התחברו אליו; אוניברסיטת וושינגטון העניקה לו תואר-כבוד.</dd>
+            <dt>יב · הלקח</dt><dd><strong>צורת גוף חריגה היא המעצור-גלילה החזק ביותר שנמדד כאן</strong> — 10 מיליון צפיות בלי חשבון, בלי מוזיקה, בלי עריכה. אם לדמות שלך תהיה צללית חריגה, חצי מהעבודה נעשתה.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 09 · משפט קבוע</span>
+          <h3>Jools Lebron</h3>
+          <p class="tiny">58M צפיות בסרטון אחד · 8/2024 · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>סרטון יומיומי על התנהגות "צנועה ומתחשבת" בעבודה.</dd>
+            <dt>ב · זיהוי</dt><dd>המילה <bdi>"demure"</bdi> בטון רך ומדוד.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>האינטונציה. לא המראה.</dd>
+            <dt>ד · הרגש</dt><dd>שעשוע + זיהוי עצמי.</dd>
+            <dt>ה · החריגות</dt><dd>מילה ארכאית שהוחזרה לחיים בהקשר מודרני.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>אנשים חזרו כדי ללמוד את ההגייה — כדי לחקות.</dd>
+            <dt>ז · שיתוף</dt><dd>כל אחד יכול להגיד את זה. מותגים וחברות אימצו את המילה תוך ימים.</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> המשפט. <strong>משתנה:</strong> ההקשר.</dd>
+            <dt>ט · הפקה</dt><dd>סלפי במכונית. 58 מיליון צפיות.</dd>
+            <dt>י · מה זה</dt><dd>אדם אמיתי, רגע לא מתוכנן.</dd>
+            <dt>יא · שחזור</dt><dd><strong>לא.</strong> הטרנד הכניס לה שני מיליון עוקבים, ובריאיונות ב-2026 היא תיארה את המחיר האישי בלשון קשה.</dd>
+            <dt>יב · הלקח</dt><dd>שני לקחים הפוכים: <strong>משפט קצר וניתן-לחיקוי הוא הכלי החזק ביותר להפצה</strong> — ו<strong>ויראליות שקרתה לך, במקום שבנית, היא לא נכס</strong>. דמות מתוכננת נותנת לך שליטה שלה לא היתה.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="eyebrow">מקרה 10 · אביזר קבוע</span>
+          <h3>Fonz</h3>
+          <p class="tiny">1.5M+ · פיליפינים · <span class="chip c-hi">ודאות גבוהה</span></p>
+        </div>
+        <div class="case-body">
+          <dl class="qa">
+            <dt>א · הרעיון</dt><dd>סקיצים יומיומיים עם תפנית — ותמיד עם אותו מיקרופון-יד.</dd>
+            <dt>ב · זיהוי</dt><dd>המיקרופון. אביזר אחד בעלות של כמה דולרים.</dd>
+            <dt>ג · הדבר הראשון</dt><dd>המיקרופון במקום שאין בו שום סיבה למיקרופון.</dd>
+            <dt>ד · הרגש</dt><dd>צחוק מההפתעה בסוף.</dd>
+            <dt>ה · החריגות</dt><dd>הוא לוקח סיטואציה שגרתית ומכניס לתוכה שפת-תקשורת.</dd>
+            <dt>ו · צפייה חוזרת</dt><dd>תפניות שונות בכל פעם — אי-אפשר לנחש.</dd>
+            <dt>ז · שיתוף</dt><dd>קהל פיליפיני ששולח פנימה. <em>לא</em> חוצה-שפות.</dd>
+            <dt>ח · קבוע/משתנה</dt><dd><strong>קבוע:</strong> המיקרופון והטון. <strong>משתנה:</strong> הכול השאר.</dd>
+            <dt>ט · הפקה</dt><dd>טלפון + אביזר אחד.</dd>
+            <dt>י · מה זה</dt><dd>אדם אמיתי.</dd>
+            <dt>יא · שחזור</dt><dd>שנים. עכשיו מככב בסדרה של GMA בתפקיד שמבוסס עליו.</dd>
+            <dt>יב · הלקח</dt><dd><strong>אביזר פיזי אחד = זהות חזותית במחיר קפה.</strong> ההגבלה: תוכן תלוי-שפה נעצר בגבול המדינה. 1.5M מקומי מול 163M של Khaby השותק.</dd>
+          </dl>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ STAGE 3 ============ -->
+  <section id="stage3" class="stack g24">
+    <div class="sec-head">
+      <span class="num-tag">שלב 3</span>
+      <h2>אנטומיית הסרטון</h2>
+      <p class="lede narrow">כאן צריך להיות ישר איתך: <strong>לא יכולתי לצפות בסרטונים.</strong> אז אני לא ממציא תזמונים. הטבלה מציגה רק מה שמתועד במקורות — מיקום, מוזיקה, מספרי צפיות ותאריכים — ובנפרד, מסומן במפורש, מה שאפשר להסיק ממנו.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>הסרטון</th><th>תאריך</th><th>ביצועים (מתועד)</th><th>מה מתועד על הסרטון עצמו</th><th>מבנה משוער <span class="t-sub">(הסקה, לא תצפית)</span></th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="idx">01</td><td><bdi>Jean Phil</bdi> — דירה</td><td class="n">17.9.2026</td><td class="n">1.4M לייקים<br>47.9K תגובות <span class="t-sub">(לשיתוף מ-19.9)</span></td><td>צל-אגרוף וריקוד בדירה. פסקול: <bdi>"Serrure #5" / La Rvfleuze</bdi>. רקע סטטי, רק הדמות זזה</td><td>פריים ראשון = הדמות במלואה. אין בניית-הקשר — ההופעה <em>היא</em> ההוק</td></tr>
+          <tr><td class="idx">02</td><td><bdi>Jean Phil</bdi> — רחוב בפריז</td><td class="n">19.9.2026</td><td class="n">5.6M צפיות<br>561K לייקים<br><span class="t-sub">תוך 3 ימים</span></td><td>צל-אגרוף ברחוב. פסקול: <bdi>"FINIS-LES" / La Fève</bdi> (ראפ צרפתי)</td><td>הסרטון הכי מוצלח שלו. רחוב ציבורי = "זה קרה באמת?" מתווסף לשאלת ה-AI</td></tr>
+          <tr><td class="idx">03</td><td><bdi>Jean Phil</bdi> — פארק</td><td class="n">19.9.2026</td><td class="n">לא אומת</td><td>מתחת לעץ בפריז. פסקול: <bdi>"Dilemma" / Nelly</bdi></td><td>מעבר למוזיקה אמריקאית מוכרת — ניסיון להרחיב מעבר לקהל הצרפתי</td></tr>
+          <tr><td class="idx">04</td><td><bdi>Jean Phil</bdi> — מוזיאון</td><td class="n">21.9.2026</td><td class="n">76.6K לייקים<br>2.3K תגובות <span class="t-sub">(IG)</span></td><td>מול הציור <em>עליית מריה לשמיים</em>. פסקול: <bdi>"Praise God" / Kanye West</bdi></td><td>הביצוע החלש ברשימה שלו. השערה: הרקע גנב את הדמות</td></tr>
+          <tr><td class="idx">05</td><td><bdi>Jean Phil</bdi> — בית קפה</td><td class="n">21.9.2026</td><td class="n">TikTok 2.5M / 327.5K<br>X 2.9M / 28K<br>IG 136K לייקים</td><td>אספרסו וקרואסון, ואז אגרופים. פסקול: <bdi>"I Get the Bag" / Gucci Mane</bdi></td><td>היחיד שהגיע למספרים גבוהים בשלוש פלטפורמות. קלישאה צרפתית מוכרת = הבנה מיידית בכל העולם</td></tr>
+          <tr><td class="idx">06</td><td><bdi>Jean Phil</bdi> — צדפות</td><td class="n">22.9.2026</td><td class="n">לא אומת</td><td>אוכל צדפות ואז מתאגרף</td><td>אותה תבנית כמו בית-הקפה. התחלת שחיקה</td></tr>
+          <tr><td class="idx">07</td><td>פארודיית ראפ · <bdi>sinx7z</bdi></td><td class="n">19.9.2026</td><td class="n">500K+ צפיות</td><td>קליפ ראפ מיוצר-AI על הדמות</td><td>תוכן-נגזרת שהוסיף הפצה בלי שהיוצר השקיע כלום</td></tr>
+          <tr><td class="idx">08</td><td>ספיידרמן · <bdi>filcrow</bdi></td><td class="n">21.9.2026</td><td class="n">62.5K לייקים</td><td>שחזור סצנת תפיסה של ספיידרמן</td><td>הדמות הפכה לנכס שאחרים משחקים איתו</td></tr>
+          <tr><td class="idx">09</td><td><bdi>World of Warcraft</bdi> · <bdi>hiddengemzgames</bdi></td><td class="n">21.9.2026</td><td class="n">72.3K צפיות</td><td>עריכת מסך-ירוק</td><td>הוכחה שהצללית עובדת גם מחוץ להקשר המקורי</td></tr>
+          <tr><td class="idx">10</td><td>Costco Guys — הסרטון הראשון</td><td class="n">1.3.2024</td><td class="n">~20.3M צפיות<br>2.1M לייקים <span class="t-sub">(~שבועיים)</span></td><td>Big Justice מכריז שהם "חבר'ה של קוסטקו", אוכל צ'יקן-בייק; A.J. ממשיך על העוגייה החדשה. בתוך טרנד <bdi>"We're X, Of Course We Y"</bdi></td><td>פתיחה בהצהרת-זהות — הצופה יודע תוך שנייה מי אלה ומה עומד לקרות</td></tr>
+          <tr><td class="idx">11</td><td><bdi>Jools Lebron</bdi> — demure</td><td class="n">8/2024</td><td class="n">58M צפיות</td><td>סלפי, דיבור ישיר למצלמה, המילה חוזרת כמה פעמים</td><td>חזרתיות בתוך הסרטון עצמו — היא לימדה את הצופה את המשפט תוך כדי</td></tr>
+          <tr><td class="idx">12</td><td><bdi>Megan Boni</bdi> — man in finance</td><td class="n">5/2024</td><td class="n">22M+ צפיות</td><td>שירה אקפלה על הספה, ~19 שניות</td><td>מנגינה דביקה + רשימת-דרישות. אנשים ביצעו גרסאות משלהם תוך ימים</td></tr>
+          <tr><td class="idx">13</td><td><bdi>Granny Spills</bdi> — Chanel</td><td class="n">2026</td><td class="n">~1M לייקים</td><td><bdi>"Flowers die, honey. My Chanel bags are forever"</bdi></td><td>משפט אחד, פאנץ' בסוף. אורך קצר מאוד</td></tr>
+          <tr><td class="idx">14</td><td><bdi>Glorb</bdi> — <bdi>"The Bottom"</bdi></td><td class="n">6.7.2023</td><td class="n">1.5M צפיות בחודש</td><td>ראפ בקולות דמויות בובספוג</td><td>הוק אודיו, לא ויזואלי. השנייה הראשונה היא הקול</td></tr>
+          <tr><td class="idx">15</td><td><bdi>Glorb</bdi> — <bdi>"FUN"</bdi> / <bdi>"KYS"</bdi></td><td class="n">6/2023</td><td class="n">1M+ / 768K<br><span class="t-sub">בחודש</span></td><td>בובספוג ופלנקטון</td><td>הוכחת-שחזור: לא סרטון אחד, סדרה</td></tr>
+          <tr><td class="idx">16</td><td><bdi>Jimothy</bdi> — הסרטון המקורי</td><td class="n">7/2026</td><td class="n">10M+ צפיות<br><span class="t-sub">בשבוע</span></td><td>צולם מחלון מטבח בבאלארד, סיאטל, ע"י <bdi>Kiana Hall</bdi>. הדביבון הולך על גדר</td><td>אפס מוזיקה, אפס עריכה, אפס קריינות. <strong>רק הצורה</strong></td></tr>
+          <tr><td class="idx">17</td><td><bdi>Pinkydoll</bdi> — קליפי NPC</td><td class="n">7/2023</td><td class="n">לא אומת לכל קליפ</td><td>לייבים; התוכן הוויראלי היה הקלטות-מסך של <em>אחרים</em></td><td>אין "פריים ראשון" מתוכנן. ההוק הוא ההתנהגות, בכל נקודת-כניסה</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note stack g12 narrow">
+      <h4>מה כן אפשר לקבוע מהנתונים — ומה לא</h4>
+      <p class="small"><strong>נתמך בנתונים:</strong> סרטון בית-הקפה של Jean Phil הצליח בשלוש פלטפורמות במקביל; סרטון המוזיאון היה החלש ביותר. שני הסרטונים — אותה דמות, אותה פעולה, אותו שבוע. המשתנה היחיד הוא הרקע. זה מרמז חזק שרקע עמוס מוריד ביצועים — אבל זה n=2, לא הוכחה.</p>
+      <p class="small"><strong>נתמך בנתונים:</strong> הסרטון של Jimothy עשה 10 מיליון צפיות עם אפס מוזיקה, אפס עריכה ואפס טקסט. זה מפריך את ההנחה ש"צריך הוק בעריכה". צורה חריגה מספיקה.</p>
+      <p class="small"><strong>השערה בלבד (אל תתייחס לזה כעובדה):</strong> כל התזמונים של "0–1 שניות / 1–3 שניות". לא צפיתי באף סרטון, ולכן כל פירוק-לשניות שאציג יהיה בדיה. מה שכן ידוע ממחקר כללי על הפלטפורמות: Meta מדדה שרושם ראשוני נוצר תוך <strong>1.7 שניות</strong>; פייסבוק דיווחה ש-<strong>65%</strong> ממי שצפה 3 שניות ימשיך ל-10 שניות; וניתוח של 3.3 מיליארד Shorts מצא שסרטונים עם יחס "נצפה מול הוחלק" של <strong>70–90%</strong> ביצעו הכי טוב, ומתחת ל-60% ההפצה קורסת. אלה מספרי-תעשייה כלליים, לא מדידה של הסרטונים כאן.</p>
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ STAGE 4 ============ -->
+  <section id="stage4" class="stack g24">
+    <div class="sec-head">
+      <span class="num-tag">שלב 4</span>
+      <h2>מה באמת משותף לעשרת המקרים</h2>
+      <p class="lede narrow">ביקשת שלא אטען שהכול משותף לכולם. אז הנה הספירה האמיתית — כולל המאפיינים שהתבררו כ<em>לא</em> אוניברסליים, שהם לפעמים הממצא המעניין יותר.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>מאפיין</th><th>כמה מ-10</th><th>דוגמאות</th><th>היעדרים בולטים</th><th>סוג הממצא</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>פעולה או טקס שחוזר בכל סרטון</strong></td><td class="n">10 / 10</td><td>צל-אגרוף · תנועת-הידיים · ריקוד · תגובה-למתנה · סולם-דירוג · משפט קבוע · מיקרופון</td><td>אין</td><td><span class="chip c-hi">ממצא נתמך</span> המאפיין היחיד שהוא 10/10</td></tr>
+          <tr><td><strong>אפשר לייצר ממנו אינסוף סרטונים</strong></td><td class="n">10 / 10</td><td>כולם בנויים כ"תבנית + משתנה אחד"</td><td>אין</td><td><span class="chip c-hi">ממצא נתמך</span></td></tr>
+          <tr><td><strong>הפקה זולה מאוד</strong></td><td class="n">10 / 10</td><td>טלפון · חדר · אביזר אחד · או AI</td><td>אין</td><td><span class="chip c-hi">ממצא נתמך</span> — אבל גם מתאם-שרידות: זול זה כל מה שיש לרוב היוצרים</td></tr>
+          <tr><td><strong>זיהוי הדמות תוך שנייה</strong></td><td class="n">8 / 10</td><td>Jean Phil · Granny · Khaby · Sausage · Pinkydoll · Costco · Jimothy · Fonz</td><td><strong>Glorb</strong> (אין דמות חזותית), <strong>Jools</strong> (אין תחפושת)</td><td><span class="chip c-hi">ממצא נתמך</span></td></tr>
+          <tr><td><strong>פער בין המראה להתנהגות</strong></td><td class="n">8 / 10</td><td>חליפה יוקרתית + אגרופים · סבתא מתוקה + עקיצות · ילד + סמכות פרשן · בובספוג + ראפ אפל · אדם + התנהגות תוכנה</td><td><strong>Sausage</strong>, <strong>Fonz</strong></td><td><span class="chip c-hi">ממצא נתמך</span> — המאפיין השני בחוזקו</td></tr>
+          <tr><td><strong>אפשר לחקות את הדמות</strong></td><td class="n">6 / 10</td><td>Jean Phil (Archibald Brown!) · Khaby · Pinkydoll · Costco · Jools · Granny</td><td><strong>Sausage</strong> (דורש אנימטור), <strong>Jimothy</strong> (אי-אפשר), <strong>Glorb</strong>, <strong>Fonz</strong></td><td><span class="chip c-mid">מתאם</span> חיקוי מאיץ, אבל Sausage הגיע ל-35M בלי שאיש יכול לחקות אותו</td></tr>
+          <tr><td><strong>פוטנציאל מסחרי שמומש</strong></td><td class="n">6 / 10</td><td>Khaby ($975M) · Sausage (Netflix, Adidas) · Costco (AEW, SNL) · Pinkydoll ($7K/יום) · Jools · Fonz (GMA)</td><td><strong>Jean Phil</strong> (מטבע-מם, לא מותג), <strong>Jimothy</strong> (אחרים הרוויחו), <strong>Granny</strong> (דווח כמתקשה להמיר), <strong>Glorb</strong> (IP של אחרים)</td><td><span class="chip c-mid">מתאם</span> ויראליות ≠ כסף</td></tr>
+          <tr><td><strong>עובד בלי להבין את השפה</strong></td><td class="n">5 / 10</td><td>Khaby · Jean Phil · Sausage · Jimothy · Pinkydoll (3 מילים)</td><td><strong>Granny</strong>, <strong>Costco</strong>, <strong>Glorb</strong>, <strong>Jools</strong>, <strong>Fonz</strong> — כולם תלויי-שפה</td><td><span class="chip c-mid">מתאם</span> <strong>לא תנאי.</strong> אבל ארבעת הגדולים בהיקף הם מהקבוצה השותקת</td></tr>
+          <tr><td><strong>עמימות: "מה אני בעצם רואה?"</strong></td><td class="n">5 / 10</td><td>Jean Phil (AI?) · Granny (אמיתית?) · Glorb (מי זה?) · Pinkydoll (למה?) · Jimothy (מה קרה לו?)</td><td><strong>Khaby</strong>, <strong>Sausage</strong>, <strong>Costco</strong>, <strong>Jools</strong>, <strong>Fonz</strong> — ברורים לגמרי</td><td><span class="chip c-mid">מתאם</span> מאיץ חזק לשיתוף, אבל בעל אורך-חיים קצר</td></tr>
+          <tr><td><strong>לבוש/אביזר קבוע ומוחלט</strong></td><td class="n">5 / 10</td><td>חליפת houndstooth · חליפה ורודה · הנקניקייה עצמה · המיקרופון · סביבת קוסטקו</td><td><strong>Khaby</strong>, <strong>Jools</strong>, <strong>Jimothy</strong>, <strong>Glorb</strong>, <strong>Pinkydoll</strong></td><td><span class="chip c-mid">מתאם</span></td></tr>
+          <tr><td><strong>המשיך להצליח מעבר לפריצה</strong></td><td class="n">7 / 10</td><td>Khaby · Sausage · Bayashi · Costco · Glorb · Granny · Fonz</td><td><strong>Jean Phil</strong> (נעצר תוך 10 ימים), <strong>Jools</strong> (לא שוחזר), <strong>Jimothy</strong> (לא בשליטתו)</td><td><span class="chip c-hi">ממצא נתמך</span> — וזה המבחן שמפריד נכס מאירוע</td></tr>
+          <tr><td><strong>אסתטיקה/מוזיקה מזוהה</strong></td><td class="n">4 / 10</td><td>Jean Phil (ראפ) · Glorb (המוזיקה היא המוצר) · Sausage · AiraBlack</td><td><strong>Jimothy</strong> — אפס סאונד, 10M צפיות</td><td><span class="chip c-lo">השערה</span> הנתונים כאן חלשים מכדי לקבוע</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel stack g16">
+      <h3>דירוג: עשרת המאפיינים שהכי שווה לבנות עליהם דמות חדשה</h3>
+      <ol class="steps">
+        <li><strong>טקס חוזר אחד.</strong> פעולה שאפשר לבצע בכל מקום, לנצח. 10/10 מהמקרים. זה לא "אחד מהמרכיבים" — זה המרכיב.</li>
+        <li><strong>פער מראה↔התנהגות.</strong> 8/10. הכי זול לייצר והכי קשה להעתיק נכון.</li>
+        <li><strong>צללית שמזוהה בפריים אחד.</strong> הלקח של Jimothy: הצורה לבדה עצרה 10 מיליון אנשים.</li>
+        <li><strong>אפס תלות בשפה.</strong> לא מייצר ויראליות, אבל קובע אם התקרה היא 1.5 מיליון או 163 מיליון.</li>
+        <li><strong>מנוע-תוכן מבוסס-תגובה.</strong> הלקח של Khaby — דמות שמגיבה לעולם לא נגמרת.</li>
+        <li><strong>פורמט שקל לאחרים לחקות.</strong> חיקוי הוא הפצה בחינם. Archibald Brown הכפיל את החשיפה של Jean Phil.</li>
+        <li><strong>עמימות מכוונת.</strong> "האם זה אמיתי?" מייצר תגובות וצפיות חוזרות — אבל זה דלק, לא מנוע.</li>
+        <li><strong>סולם או טקס-דירוג.</strong> התבנית של Costco Guys: מייצרת ציפייה, ויכוח ותגובות.</li>
+        <li><strong>פנים לא-אנושיות או אנונימיות.</strong> הנתיב המסחרי הבטוח של Nobody Sausage.</li>
+        <li><strong>קו-ייצור, לא סרטון.</strong> ההבדל בין Granny Spills (ממשיכה) ל-Jean Phil (נעלם אחרי 10 ימים).</li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ STAGE 5 ============ -->
+  <section id="stage5" class="stack g24">
+    <div class="sec-head">
+      <span class="num-tag">שלב 5</span>
+      <h2>פסיכולוגיית הקשב — עשרה מנגנונים</h2>
+      <p class="lede narrow">כל מנגנון כאן הוא <strong>השערה הניתנת לבדיקה</strong>, לא חוק. שום תיאוריה פסיכולוגית לא מוכיחה שסרטון יהפוך לוויראלי; היא רק מסבירה למה משהו <em>עשוי</em> לעצור גלילה. לכן לכל אחד יש גם "מתי זה נכשל" ו"איך בודקים".</p>
+    </div>
+
+    <div class="mechs">
+
+      <div class="mech">
+        <div class="mech-title"><b>01 · פרופורציות חריגות</b><span class="tiny">צורת גוף שלא תואמת את התבנית שהמוח מצפה לה</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>המוח מזהה צורות לפני שהוא מזהה תוכן. סטייה מפרופורציה מוכרת נקלטת לפני שהמסר נקרא.</p></div>
+          <div><span>דוגמה אמיתית</span><p>Jimothy — 10M צפיות בשבוע עם אפס עריכה. Hasbulla — 8M עוקבים.</p></div>
+          <div><span>מתי זה נכשל</span><p>אם זה נתפס כניצול או כלעג. ובדמות AI — אם החריגות נראית כבאג ולא ככוונה.</p></div>
+          <div><span>איך בודקים</span><p>שלושה סרטונים זהים, שלוש רמות חריגות. השוו שיעור-צפייה ב-3 שניות.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>02 · ניגוד לבוש↔התנהגות</b><span class="tiny">אלגנטיות מוחלטת שעושה משהו מגוחך</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>לבוש הוא הצהרת-סטטוס. כשההתנהגות סותרת אותה, נוצר פער שהמוח רוצה לסגור.</p></div>
+          <div><span>דוגמה אמיתית</span><p>Jean Phil — חליפת houndstooth + צל-אגרוף. Granny Spills — שאנל + עקיצות.</p></div>
+          <div><span>מתי זה נכשל</span><p>אם הדמות קורצת לצופה. ברגע שהיא מודה שזו בדיחה, הפער נסגר והקסם נגמר.</p></div>
+          <div><span>איך בודקים</span><p>אותו סרטון, פעם בחליפה ופעם בבגדי יומיום. ההפרש הוא ערך-הניגוד.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>03 · רצינות מוחלטת (דֶדפן)</b><span class="tiny">אפס הכרה בכך שמשהו מצחיק</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>הצופה נדרש להכריע בעצמו מה הוא רואה. ההכרעה הזאת היא עצמה מעורבות.</p></div>
+          <div><span>דוגמה אמיתית</span><p>Jean Phil לאורך כל שמונת הסרטונים. Dan Hentschel.</p></div>
+          <div><span>מתי זה נכשל</span><p>כשאין שום רמז לכוונה — אז זה סתם משעמם ולא מסתורי. הגבול דק.</p></div>
+          <div><span>איך בודקים</span><p>גרסה עם חיוך קטן לעומת גרסה בלי. מדדו שיעור-שיתוף, לא לייקים.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>04 · עמימות מכוונת</b><span class="tiny">"רגע — זה אמיתי או AI?"</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>חוסר-ודאות מייצר צפייה חוזרת (לחפש הוכחות) ותגובות (לטעון טענה). האלגוריתם מתגמל את שניהם.</p></div>
+          <div><span>דוגמה אמיתית</span><p>הוויכוח סביב Jean Phil ב-20.9.2026 היה שלב-הצמיחה הגדול ביותר שלו.</p></div>
+          <div><span>מתי זה נכשל</span><p>כשהתשובה מתבררת — הדלק נגמר. בנוסף: הטעיה מכוונת מסכנת אותך רגולטורית ומוסרית.</p></div>
+          <div><span>איך בודקים</span><p>מדדו יחס תגובות-לצפיות. עמימות מזיזה את המדד הזה יותר מכל דבר אחר.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>05 · הבנה ללא שפה</b><span class="tiny">הבדיחה עוברת בלי מילה אחת</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>אין צורך בתרגום, אין כתוביות, אין ניחוש-קהל. האלגוריתם יכול להפיץ לכל מדינה.</p></div>
+          <div><span>דוגמה אמיתית</span><p>Khaby — 163M. Nobody Sausage — 35M. שניהם ללא מילה.</p></div>
+          <div><span>מתי זה נכשל</span><p>בלי שפה קשה יותר לבנות קשר רגשי עמוק, והמעבר למוצר או לשירות קשה יותר.</p></div>
+          <div><span>איך בודקים</span><p>הריצו את אותו סרטון עם ובלי כתוביות. בדקו את פילוח-המדינות בתוצאה.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>06 · מבט ישיר למצלמה</b><span class="tiny">הדמות מסתכלת עליך</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>מבט ישיר נקרא כפנייה אישית ומעכב את תנועת האגודל.</p></div>
+          <div><span>דוגמה אמיתית</span><p>Khaby מסיים כמעט כל סרטון במבט למצלמה. Granny Spills מדברת ישירות.</p></div>
+          <div><span>מתי זה נכשל</span><p>בדמות AI — מבט ישיר חושף ארטיפקטים בעיניים מהר יותר מכל זווית אחרת.</p></div>
+          <div><span>איך בודקים</span><p>חיתכו את אותו סרטון: אחד מסתיים במבט, אחד בלי. מדדו צפייה-עד-הסוף.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>07 · חזרתיות שמייצרת היכרות</b><span class="tiny">אותו דבר, שוב ושוב</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>חשיפה חוזרת מגבירה חיבה ומייצרת ציפייה. הצופה מזהה את הדמות עוד לפני שהבין מה הסרטון.</p></div>
+          <div><span>דוגמה אמיתית</span><p>Pinkydoll: אותן שלוש מילים, אלפי פעמים. Costco Guys: אותו סולם-דירוג.</p></div>
+          <div><span>מתי זה נכשל</span><p>שחיקה. סרטוני הצדפות והמוזיאון של Jean Phil ביצעו פחות טוב — אחרי חמישה סרטונים זהים.</p></div>
+          <div><span>איך בודקים</span><p>עקבו אחרי העקומה: אם סרטון 6 חלש מסרטון 2, הגעתם לשחיקה. הכניסו משתנה חדש.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>08 · הקשר מוכר, התנהגות זרה</b><span class="tiny">מקום שכולם מכירים + משהו שלא שייך</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>הצופה לא צריך להשקיע קשב בהבנת המקום, אז כל הקשב פנוי לחריגה.</p></div>
+          <div><span>דוגמה אמיתית</span><p>בית-הקפה של Jean Phil (אספרסו וקרואסון = קלישאה מובנת בעולם) — הביצוע הרב-פלטפורמי הטוב ביותר שלו. לעומת סרטון המוזיאון, החלש ברשימה.</p></div>
+          <div><span>מתי זה נכשל</span><p>כשהרקע עצמו מעניין מדי וגונב את הדמות.</p></div>
+          <div><span>איך בודקים</span><p>אותה פעולה בדיוק, חמישה רקעים. זה הניסוי הכי זול והכי מועיל שתוכל להריץ.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>09 · פעולה שכבר באמצע</b><span class="tiny">הסרטון נפתח באמצע משהו, בלי הקדמה</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>פער-מידע מיידי: "מה פספסתי?". המחקר מראה שהרושם נוצר תוך ~1.7 שניות — אין זמן להקדמה.</p></div>
+          <div><span>דוגמה אמיתית</span><p>כל סרטוני Jean Phil נפתחים כשהוא כבר מתאגרף.</p></div>
+          <div><span>מתי זה נכשל</span><p>אם הפעולה לא מובנת בלי ההקשר שהושמט — זה מבלבל במקום לסקרן.</p></div>
+          <div><span>איך בודקים</span><p>חיתכו 2 שניות מההתחלה. אם הביצועים משתפרים — ההקדמה היתה מיותרת.</p></div>
+        </div>
+      </div>
+
+      <div class="mech">
+        <div class="mech-title"><b>10 · ניתנות-לחיקוי</b><span class="tiny">הצופה יכול לעשות את זה בעצמו</span></div>
+        <div class="mech-grid">
+          <div><span>למה זה עשוי לעבוד</span><p>חיקוי הופך צופים ליוצרים. כל חיקוי הוא הפצה שאתה לא משלם עליה.</p></div>
+          <div><span>דוגמה אמיתית</span><p><bdi>"very demure"</bdi> אומץ ע"י מותגים תוך ימים. Archibald Brown הגיע ל-110K מחיקוי Jean Phil.</p></div>
+          <div><span>מתי זה נכשל</span><p>כשהמחקים בולעים את המקור. Derek Mercer לא הצליח (1,200 עוקבים) — אבל הוא גם לא הזיק. הסכנה האמיתית היא מחקה חזק יותר ממך.</p></div>
+          <div><span>איך בודקים</span><p>ספרו כמה סרטוני-נגזרת של אחרים צצו בשבועיים. זה מדד-הפצה אמיתי יותר מלייקים.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ STAGE 6 ============ -->
+  <section id="stage6" class="stack g24">
+    <div class="sec-head">
+      <span class="num-tag">שלב 6</span>
+      <h2>עשרה קונספטים לדמות</h2>
+      <p class="lede narrow">ביקשת עשרה קונספטים שונים באמת — לא עשרה שמות לאותה דמות. לכן כל אחד נבנה סביב <strong>מנוע אחר</strong>: מה בדיוק גורם לצופה לעצור. כולם מתוכננים להיות מובנים בלי שפה, ולהיות מיוצרים בהיגספילד עם דמות אחת נעולה.</p>
+    </div>
+
+    <div class="concepts">
+
+      <article class="concept pick">
+        <div class="concept-head"><span class="engine">מנוע · מדים מושלמים במקום בלתי אפשרי</span><h3>הקונסיירז' של 3 לפנות בוקר</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@the_night_concierge</bdi></dd>
+          <dt>תרבות</dt><dd>מלונאות אירופית קלאסית · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>מדי קונסיירז' מלאים עם מפתחות-זהב צולבים על הדש. פנס-ראש זעיר. תמיד ישר כמו סרגל.</dd>
+          <dt>הטקס</dt><dd>הוא מגיע למקום שאין בו מלון — יער, תחנת-רכבת ריקה, קרחון, גג — מצלצל בפעמון-שירות קטן, ומבצע שירות אחד זעיר וחסר-תועלת. ואז נעלם.</dd>
+          <dt>מה משתנה</dt><dd>רק המקום והשירות.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>פעמון-שירות מובן בכל תרבות. אין מילה אחת.</dd>
+          <dt>סיכון</dt><dd>עלול להיקרא כ"אסתטי" ולא כמצחיק. צריך רגע אבסורדי חד בכל סרטון.</dd>
+        </dl>
+      </article>
+
+      <article class="concept pick">
+        <div class="concept-head"><span class="engine">מנוע · טקס רציני על אובדן טריוויאלי</span><h3>קברן החפצים</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@the_object_undertaker</bdi></dd>
+          <dt>תרבות</dt><dd>אסתטיקה ויקטוריאנית · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>מעיל-זנב שחור, צילינדר, כפפות לבנות, ארון-קבורה זעיר מתחת לזרוע.</dd>
+          <dt>הטקס</dt><dd>הלוויה מלאה וחגיגית לחפץ יומיומי שמת: אוזנייה שאבדה, מטען שנשרף, מסך סדוק, גרב בודדת. הורדה לקבר, רגע דומייה, פרח אחד.</dd>
+          <dt>מה משתנה</dt><dd>החפץ. אספקה אינסופית — וכל צופה חווה את זה בעצמו.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>הלוויה נראית אותו דבר בכל העולם. הצער על חפץ שבור — אוניברסלי.</dd>
+          <dt>סיכון</dt><dd>רגישות סביב מוות. חייב להישאר קליל לחלוטין ולעולם לא להתקרב לאובדן אנושי.</dd>
+        </dl>
+      </article>
+
+      <article class="concept pick">
+        <div class="concept-head"><span class="engine">מנוע · כוח בגוף הלא-נכון</span><h3>סבתא בדלת</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@grandma_on_the_door</bdi></dd>
+          <dt>תרבות</dt><dd>מזרח-אירופית · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>סבתא זעירה במטפחת-ראש פרחונית, עם אוזנייה שחורה של אבטחה וחבל-קטיפה אדום.</dd>
+          <dt>הטקס</dt><dd>היא שומרת בכניסה למקומות שלא צריכים שמירה — מכולת, ספסל, ארגז-חול, מכונת-כביסה. מודדת מישהו בעיניים, ומסמנת ביד אחת: פנימה או החוצה.</dd>
+          <dt>מה משתנה</dt><dd>המקום ומי מבקש להיכנס.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>תנועת הסלקטור מוכרת בכל עיר בעולם. אפס מילים.</dd>
+          <dt>סיכון</dt><dd>קל ליפול לסטריאוטיפ. הדמות חייבת להיות המלכה של הסרטון, אף פעם לא הקורבן.</dd>
+        </dl>
+      </article>
+
+      <article class="concept">
+        <div class="concept-head"><span class="engine">מנוע · כובד-ראש קטלני על מטלה זעירה</span><h3>סמוראי המטלות</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@samurai_of_small_tasks</bdi></dd>
+          <dt>תרבות</dt><dd>יפן · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>שריון סמוראי מלא, מודרני-נקי. הפנים לעולם לא נראות במלואן.</dd>
+          <dt>הטקס</dt><dd>ריכוז של לפני-קרב — ואז פעולה מיקרוסקופית: פתיחת יוגורט, השחלת חוט למחט, קילוף מדבקה. שאיבת-אוויר, רגע קפוא, ביצוע מושלם.</dd>
+          <dt>מה משתנה</dt><dd>המטלה.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>שפת-גוף של לוחם מובנת בכל מקום; המטלות יומיומיות בכל בית.</dd>
+          <dt>סיכון</dt><dd>שוק צפוף — יש הרבה תוכן "סמוראי". הייחוד חייב להיות בפער, לא בתחפושת.</dd>
+        </dl>
+      </article>
+
+      <article class="concept">
+        <div class="concept-head"><span class="engine">מנוע · אין פנים — הצופה רואה את עצמו</span><h3>איש המראה</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@mirror_man_daily</bdi></dd>
+          <dt>תרבות</dt><dd>ניטרלי · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>חליפה שלמה מכוסה רסיסי-מראה. אף פעם לא רואים פנים.</dd>
+          <dt>הטקס</dt><dd>הוא עומד בשקט במקום ציבורי ומשקף את מי שעובר. לפעמים הוא עושה בדיוק מה שהעובר-אורח עושה, בעיכוב של חצי שנייה.</dd>
+          <dt>מה משתנה</dt><dd>המקום והאנשים.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>אין פנים = אין גזע, גיל או לאום. זה ליטרלית כל אחד.</dd>
+          <dt>סיכון</dt><dd>קשה לייצר ב-AI בצורה משכנעת — השתקפויות הן נקודת-התורפה הקלאסית של מודלים.</dd>
+        </dl>
+      </article>
+
+      <article class="concept">
+        <div class="concept-head"><span class="engine">מנוע · הגוף כטכנולוגיה תקולה</span><h3>סטיב שנתקע</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@buffering_steve</bdi></dd>
+          <dt>תרבות</dt><dd>אמריקאי פרוורי · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>אדם ממוצע לגמרי — בכוונה. מה שבולט זו התנועה, לא המראה.</dd>
+          <dt>הטקס</dt><dd>הוא קופא באמצע פעולה, כמו סרטון שנתקע בטעינה, ואז קופץ קדימה בפריים אחד. בחיים לא מגיב לזה.</dd>
+          <dt>מה משתנה</dt><dd>מה הוא ניסה לעשות כשזה קרה.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>כל אדם בעולם יודע מה זה סרטון שנתקע.</dd>
+          <dt>סיכון</dt><dd>ההבדל בין "גאוני" ל"סרטון מקולקל" הוא שבריר שנייה בעריכה. דורש דיוק גבוה.</dd>
+        </dl>
+      </article>
+
+      <article class="concept">
+        <div class="concept-head"><span class="engine">מנוע · תחרות אמיתית מול חיה</span><h3>רב-אמן היונים</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@pigeon_grandmaster</bdi></dd>
+          <dt>תרבות</dt><dd>מזרח-אירופי · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>חליפת-טורניר, עניבה, שעון-שחמט, לוח על ספסל בפארק. יונה מולו.</dd>
+          <dt>הטקס</dt><dd>משחק שחמט רציני לגמרי מול יונה. לוחץ שעון. רושם מהלכים. <strong>לפעמים מפסיד</strong> ולוחץ לה כנף.</dd>
+          <dt>מה משתנה</dt><dd>היריבה והתוצאה. טבלת-דירוג מצטברת מייצרת סדרה.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>שחמט וחיות — שתי שפות אוניברסליות. אפס מילים.</dd>
+          <dt>סיכון</dt><dd>הפקת AI של חיות בתנועה עדיין לא יציבה. בודקים את זה לפני שמתחייבים.</dd>
+        </dl>
+      </article>
+
+      <article class="concept">
+        <div class="concept-head"><span class="engine">מנוע · מומחיות עילית על חומר חסר-ערך</span><h3>סומלייה מי-הברז</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@tap_water_sommelier</bdi></dd>
+          <dt>תרבות</dt><dd>צרפתי · ללא דיבור (מילה אחת על כרטיס)</dd>
+          <dt>הצללית</dt><dd>סינר סומלייה שחור, טסטוויין כסוף על שרשרת, כרטיסיית-ניקוד ביד.</dd>
+          <dt>הטקס</dt><dd>טקס טעימה מלא — סיבוב, הרחה, לגימה, הרהור — על מי ברז, מזרקה ציבורית, צינור-גינה, שלולית. ואז מרים לעבר המצלמה כרטיס עם ציון ומילה אחת.</dd>
+          <dt>מה משתנה</dt><dd>מקור המים והציון. המספר על הכרטיס הוא מנוע-התגובות.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>טקס היין מוכר מהסרטים בכל העולם. מספר הוא שפה בינלאומית.</dd>
+          <dt>סיכון</dt><dd>קרוב מדי ל-Jean Phil (צרפתי אלגנטי). כדאי לשנות לאום אם נבחר.</dd>
+        </dl>
+      </article>
+
+      <article class="concept">
+        <div class="concept-head"><span class="engine">מנוע · שבירת סקריפט חברתי</span><h3>איש ההתנצלות</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@the_apology_man</bdi></dd>
+          <dt>תרבות</dt><dd>יפני-בריטי מעורב · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>חליפה שחורה פשוטה, זר פרחים קטן, קידה עמוקה של 90 מעלות.</dd>
+          <dt>הטקס</dt><dd>הוא נכנס לסיטואציה ומתנצל עמוקות על משהו שהוא בבירור לא אשם בו — הגשם, הפקק, תינוק שבוכה, קפה שנגמר. מניח את הפרחים והולך.</dd>
+          <dt>מה משתנה</dt><dd>מה שקרה.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>קידה נקראת בכל מקום. אין צורך בשפה.</dd>
+          <dt>סיכון</dt><dd>עלול להיקרא כלעג לתרבות היפנית. עדיף לנטרל את המיקום הגיאוגרפי.</dd>
+        </dl>
+      </article>
+
+      <article class="concept">
+        <div class="concept-head"><span class="engine">מנוע · החלפה ואי-תנועה</span><h3>המחליף</h3></div>
+        <dl>
+          <dt>שם משתמש</dt><dd><bdi>@the_understudy_</bdi></dd>
+          <dt>תרבות</dt><dd>תיאטרלי · ללא דיבור</dd>
+          <dt>הצללית</dt><dd>תלבושת תיאטרון מלאה — תמיד של תפקיד שאף אחד לא ביקש.</dd>
+          <dt>הטקס</dt><dd>הוא תופס את מקומו של משהו בעולם האמיתי — פסל בכיכר, בובת-ראווה בחלון, תמרור, שומר — וקופא לגמרי. הדבר היחיד שזז זו העין.</dd>
+          <dt>מה משתנה</dt><dd>מה הוא מחליף, ואיך אנשים מגיבים.</dd>
+          <dt>למה זה חוצה גבולות</dt><dd>קיפאון וקומדיה-של-פסלים הם פנטומימה טהורה.</dd>
+          <dt>סיכון</dt><dd>קיפאון גמור הוא תוכן דל-תנועה — דווקא מה שאלגוריתמים נוטים להעניש. צריך בדיקה.</dd>
+        </dl>
+      </article>
+
+    </div>
+
+    <div class="note stack g12 narrow">
+      <h4>ההמלצה שלי: לבדוק שלושה, לא עשרה</h4>
+      <p class="small">שלושת המסומנים למעלה — <strong>קברן החפצים</strong>, <strong>הקונסיירז' של 3 לפנות בוקר</strong> ו<strong>סבתא בדלת</strong> — הם היחידים שעומדים בכל ארבעת המדדים הראשונים מהדירוג בשלב 4: טקס חוזר, פער מראה↔התנהגות, צללית מזוהה בפריים אחד, ואפס תלות בשפה.</p>
+      <p class="small"><strong>קברן החפצים הוא הראשון שהייתי בודק.</strong> הוא היחיד מהשלושה שיש לו גם מנוע-תוכן מבוסס-תגובה (מנגנון 05 בטבלה — הלקח של Khaby): אנשים ישלחו לו תמונות של חפצים שבורים שלהם ויבקשו הלוויה. זה מנוע שלא נגמר, והוא מזמין מעורבות מהקהל במקום רק צפייה.</p>
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ BUILD ============ -->
+  <section id="build" class="stack g24">
+    <div class="sec-head">
+      <span class="num-tag">ביצוע</span>
+      <h2>לבנות את זה בהיגספילד — והמחיר האמיתי</h2>
+      <p class="lede narrow">זה החלק שעולה כסף. כל המספרים כאן הם מה שפורסם נכון לאוקטובר 2026, ויש לאמת אותם מול המסך בפועל לפני שלוחצים על משהו.</p>
+    </div>
+
+    <div class="panel stack g16">
+      <h3>הזרימה: <bdi>Soul ID</bdi> — נעילת דמות</h3>
+      <p class="small">זה בדיוק המנגנון שעומד מאחורי Jean Phil. המקורות מתארים את העיקרון כ"תמונת-מאסטר אחת שמניעה כל ייצור" — <em>עקביות הדמות היא החפיר</em>. בהיגספילד זה נקרא Soul ID.</p>
+      <ol class="steps small">
+        <li><strong>מייצרים דמות מקורית.</strong> פנים שנוצרו ב-AI, לא תמונה של אדם אמיתי. נועלים לבוש, תסרוקת והבעה.</li>
+        <li><strong>מאמנים Soul ID</strong> על 20–80 תמונות של אותה דמות. האימון לוקח כמה דקות.</li>
+        <li><strong>מייצרים כל סצנה דרך אותו Soul ID</strong> — משנים רקע, תאורה וזווית, והפנים נשארות זהות.</li>
+        <li><strong>מעבירים תנועה</strong> מסרטון-ייחוס: רקע סטטי, רק הגוף זז, עד ~25 שניות.</li>
+        <li><strong>שומרים על קבוע אחד ומשתנה אחד.</strong> אותה דמות, אותו טקס — רק המקום מתחלף.</li>
+      </ol>
+    </div>
+
+    <div class="tablewrap">
+      <table style="min-width:620px">
+        <thead><tr><th>פריט</th><th>מחיר שפורסם</th><th>הערה</th></tr></thead>
+        <tbody>
+          <tr><td>כרטיס-כניסה חד-פעמי</td><td class="n">$3</td><td>40 קרדיטים + יומיים גישה. <strong>זו הדרך הנכונה להתחיל.</strong></td></tr>
+          <tr><td>מסלול <bdi>Starter</bdi></td><td class="n">$15 / חודש</td><td>200 קרדיטים</td></tr>
+          <tr><td>מסלול <bdi>Plus</bdi></td><td class="n">$49 / חודש</td><td>1,000 קרדיטים ($39 בתשלום שנתי)</td></tr>
+          <tr><td>מסלול <bdi>Ultra</bdi></td><td class="n">$129 / חודש</td><td>3,000 קרדיטים ($99 בתשלום שנתי)</td></tr>
+          <tr><td>יצירת דמות ב-<bdi>AI Influencer Studio</bdi></td><td class="n">~1.12 קרדיטים ≈ $0.06</td><td>זניח</td></tr>
+          <tr><td>תמונה (<bdi>Soul</bdi>)</td><td class="n">$0.12–$0.23</td><td>לייצור</td></tr>
+          <tr><td>תמונה→וידאו</td><td class="n">$0.16–$0.70</td><td>לייצור. <strong>זה ההוצאה העיקרית</strong></td></tr>
+          <tr><td>דיבור→וידאו</td><td class="n">$0.86–$4.22</td><td>לא נדרש בדמות שותקת</td></tr>
+          <tr><td>מסלול חינם</td><td class="n">לא קיים</td><td>הוסר מדף התמחור ב-8.9.2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note stack g8 narrow">
+      <h4>מה הייתי עושה בפועל</h4>
+      <p class="small">מתחילים ב<strong>כרטיס של $3</strong>. בתוך היומיים: מייצרים Soul ID אחד לקונספט אחד (קברן החפצים), ומריצים <strong>חמישה סרטונים — אותה דמות, אותו טקס, חמישה רקעים שונים</strong>. זה בדיוק הניסוי ממנגנון 08, וזו העלות הנמוכה ביותר שבה אפשר לדעת אם הדמות עובדת. סך-הכול צפוי: <strong>פחות מ-$10</strong>. רק אם המספרים טובים — עוברים למסלול חודשי.</p>
+      <p class="small"><strong>שלוש אזהרות שחייבות להיאמר לפני שמתחילים:</strong> (1) טיקטוק, אינסטגרם ויוטיוב דורשים <em>סימון תוכן AI</em> — אי-סימון מסכן את החשבון; (2) אל תאמן Soul ID על תמונות של אדם אמיתי שלא נתן אישור; (3) המסלול של Jean Phil הסתיים במטבע-מם ובפעילות שנעצרה תוך עשרה ימים. אם הולכים על זה — הולכים על מותג, לא על קריפטו.</p>
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ LIMITS ============ -->
+  <section id="limits" class="stack g24">
+    <div class="sec-head">
+      <span class="num-tag">גילוי נאות</span>
+      <h2>מה הדף הזה לא עושה</h2>
+    </div>
+    <div class="narrow stack g12">
+      <ul class="bullets">
+        <li><strong>לא צפיתי באף סרטון.</strong> כל מה שכתוב על סרטון מסוים מגיע מתיאור כתוב במקור. אין כאן פירוק לשניות — כי כל פירוק כזה היה בדיה.</li>
+        <li><strong>22 יוצרים, לא 50.</strong> זו היתה הבחירה שעשית: עומק מאומת על פני רוחב. הוספת 28 שורות נוספות היתה מוסיפה בעיקר שורות עם "לא אומת".</li>
+        <li><strong>מספרי עוקבים הם תצלום-רגע.</strong> הנתון המדויק ביותר כאן — 162,977,070 של Khaby — נכון לאוקטובר 2026 וכבר השתנה.</li>
+        <li><strong>אין כאן נתוני קצב-צמיחה יומיים.</strong> הם קיימים רק בכלים בתשלום (HypeAuditor, Social Blade Pro וכדומה). אם תרצה אותם — זו הוצאה שצריך לאשר.</li>
+        <li><strong>המנגנונים בשלב 5 הם השערות.</strong> שום דבר בדף הזה לא מוכיח שסרטון יהפוך לוויראלי. הם נועדו להיבדק, לא להאמין בהם.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="houndstooth soft"></div>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="stack g16">
+    <h2>מקורות</h2>
+    <ol class="sources small">
+      <li><a href="https://knowyourmeme.com/memes/jean-philanthrope-jean-phil">KnowYourMeme — Jean Philanthrope / Jean Phil</a></li>
+      <li><a href="https://www.dexerto.com/tiktok/who-is-jean-phil-ai-character-behind-multimillion-dollar-meme-coin-sparks-fake-persona-trend-3412528/">Dexerto — Jean Phil, מטבע-המם וטרנד הפרסונות הבדויות</a></li>
+      <li><a href="https://oimi.ai/en/blog/who-is-jean-phil">Oimi — איך מייצרים סרטונים בסגנון Jean Phil (זרימה טכנית)</a></li>
+      <li><a href="https://time.com/7329699/ai-influencers-tiktok-granny-spills/">TIME — Granny Spills ועתיד המשפיענים</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Glorb">Wikipedia — Glorb</a> · <a href="https://knowyourmeme.com/memes/people/glorb">KnowYourMeme — Glorb</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Khaby_Lame">Wikipedia — Khaby Lame</a> · <a href="https://www.buzzlytics.io/tiktok/khaby.lame">Buzzlytics — נתוני טיקטוק, אוקטובר 2026</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Bayashi">Wikipedia — Bayashi</a></li>
+      <li><a href="https://www.virtualhumans.org/article/who-is-virtual-influencer-and-famous-tiktoker-nobody-sausage">VirtualHumans — Nobody Sausage</a> · <a href="https://www.creativereview.co.uk/nobody-sausage-animation-social-media/">Creative Review</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Pinkydoll">Wikipedia — Pinkydoll</a> · <a href="https://www.forbes.com/sites/danidiplacido/2023/07/20/tiktoks-npc-ice-cream-so-good-meme-explained/">Forbes — מם ה-NPC</a></li>
+      <li><a href="https://knowyourmeme.com/memes/were-costco-guys">KnowYourMeme — We're Costco Guys</a> · <a href="https://www.rollingstone.com/culture/culture-features/aj-and-big-justice-costco-guys-tiktok-song-1235063207/">Rolling Stone</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Jimothy_(raccoon)">Wikipedia — Jimothy (raccoon)</a> · <a href="https://www.today.com/news/good-news/jimothy-raccoon-seattle-viral-video-rcna588184">TODAY</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Jools_Lebron">Wikipedia — Jools Lebron</a> · <a href="https://thegrio.com/2026/04/15/jools-lebron-going-viral-ruined-her-life-very-demure/">theGrio — המחיר של הוויראליות</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Looking_for_a_Man_in_Finance">Wikipedia — Looking for a Man in Finance</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Fonz_(content_creator)">Wikipedia — Fonz</a> · <a href="https://www.gmanetwork.com/entertainment/photos/get-to-know-fonz-the-content-creator-with-a-hilarious-twist/26083/">GMA Network</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Vexbolts">Wikipedia — Vexbolts</a> · <a href="https://en.wikipedia.org/wiki/Aitana_L%C3%B3pez">Wikipedia — Aitana López</a></li>
+      <li><a href="https://manofmany.com/entertainment/sport/hasbulla-magomedov">Man of Many — Hasbulla Magomedov</a></li>
+      <li><a href="https://higgsfield.ai/creator-hub/help-center/ai-models/how-do-i-create-and-use-a-soul-id-character">Higgsfield — מדריך Soul ID</a> · <a href="https://www.layer3labs.io/guides/higgsfield-ai-pricing">Layer3Labs — תמחור היגספילד 2026</a> · <a href="https://novoads.ai/en/blog/higgsfield-pricing">NovoAds — קרדיטים לסרטון</a></li>
+      <li><a href="https://virvid.ai/blog/first-3-seconds-hook-faceless-shorts-2026">נתוני שימור-צפייה: Meta 1.7 שניות · פייסבוק 65% · ניתוח 3.3 מיליארד Shorts</a></li>
+    </ol>
+  </section>
+
+</main>
+</body>
+</html>
